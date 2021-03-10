@@ -1,0 +1,40 @@
+{
+  "name": "fluent-multistep-wizard",
+  "version": "1.0.0",
+  "description": "An easy-to-use multi-step Wizard component using Fluent design.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankark/fluent-multistep-wizard.git"
+  },
+  "keywords": [],
+  "author": "Priyankar Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priyankark/fluent-multistep-wizard/issues"
+  },
+  "homepage": "https://github.com/priyankark/fluent-multistep-wizard#readme",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.41.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
