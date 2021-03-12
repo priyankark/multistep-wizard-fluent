@@ -1,7 +1,7 @@
 {
-  "name": "fluent-multistep-wizard",
+  "name": "multistep-wizard-fluent",
   "version": "1.0.0",
-  "description": "An easy-to-use and customizable 'Multi-step Wizard' component using Fluent design.",
+  "description": "An easy-to-use and customizable 'Multi-step Wizard' component using Fluent controls.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/priyankark/fluent-multistep-wizard.git"
   },
-  "keywords": [],
+  "keywords": ["multistep wizard","multistep-wizard","multistep-wizard-fluent", "fluent multistep wizard", "n-step-wizard", "wizard", "steps-wizard"],
   "author": "Priyankar Kumar",
   "license": "MIT",
   "bugs": {
