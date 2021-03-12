@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IStepPageMap } from '../components/Wizard';
 
-interface INavContext {
+export interface INavContext {
     stepDetails: {
         currentPageIndex: number,
     },
