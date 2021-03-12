@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/priyankark/fluent-multistep-wizard.git"
+    "url": "git+https://github.com/priyankark/multistep-wizard-fluent.git"
   },
   "keywords": ["multistep wizard","multistep-wizard","multistep-wizard-fluent", "fluent multistep wizard", "n-step-wizard", "wizard", "steps-wizard"],
   "author": "Priyankar Kumar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/priyankark/fluent-multistep-wizard/issues"
+    "url": "https://github.com/priyankark/multistep-wizard-fluent/issues"
   },
-  "homepage": "https://github.com/priyankark/fluent-multistep-wizard#readme",
+  "homepage": "https://github.com/priyankark/multistep-wizard-fluent#readme",
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
