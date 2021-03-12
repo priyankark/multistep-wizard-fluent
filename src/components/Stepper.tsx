@@ -2,6 +2,8 @@ import * as React from 'react';
 import { IStepper } from './Wizard';
 import { StepperNav } from 'vertical-stepper-nav';
 import { NavContext } from '../context/NavContext';
+import { Stack } from '@fluentui/react/lib/Stack';
+import { getContainerStyleBasedOnResolution } from '../utilities/helpers';
 
 export const Stepper = (props: IStepper) => {
     const { setStepDetails, stepDetails } = React.useContext(NavContext);
@@ -19,5 +21,7 @@ export const Stepper = (props: IStepper) => {
         onClickHandler: () => setStepDetails({ currentPageIndex: stepDetails.currentPageIndex}),
         stepStateColor: '#0078D4'
     }
-    return <StepperNav steps={stepperMapProps} />
+    return <Stack styles={{root: {minWidth: getContainerStyleBasedOnResolution().navWidth}}}> 
+            <StepperNav steps={stepperMapProps} />
+           </Stack>
 }

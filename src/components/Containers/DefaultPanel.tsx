@@ -28,6 +28,11 @@ export const DefaultPanel = (props: IContainerProps) => {
                 borderTopStyle: 'solid',
                 borderTopColor: 'rgb(237, 235, 233)',
                 borderTop: 1,
+            },
+            header: {
+                borderBottomStyle: 'solid',
+                borderBottomColor: 'rgb(237, 235, 233)',
+                borderBottom: 1,
             }
         }}
     >

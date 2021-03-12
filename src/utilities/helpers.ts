@@ -3,8 +3,8 @@ export const getContainerStyleBasedOnResolution = () => {
     if (screenWidth < 1600) {
       return {
         panelWidth: '85%',
-        navWidth: '30vw',
-        contentWidth: '70vw',
+        navWidth: '23vw',
+        contentWidth: '77vw',
       };
     } else {
       return {

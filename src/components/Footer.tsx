@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PrimaryButton } from '@fluentui/react/lib/Button';
+import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/Button';
 import { Stack } from '@fluentui/react/lib/Stack';
 import { NavContext } from '../context/NavContext';
 import { getContainerStyleBasedOnResolution } from '../utilities/helpers';
@@ -7,15 +7,15 @@ import { getContainerStyleBasedOnResolution } from '../utilities/helpers';
 export const Footer = () => {
     const { stepDetails, setStepDetails, stepList } = React.useContext(NavContext);
     return <footer style={{ marginLeft: getContainerStyleBasedOnResolution().navWidth }}>
-        <Stack horizontal horizontalAlign="space-between">
+        <Stack horizontal tokens={{childrenGap: 12}}>
             <Stack.Item>
                 {
                     (stepDetails.currentPageIndex !== 0) &&
-                    <PrimaryButton onClick={() => {
+                    <DefaultButton onClick={() => {
                         setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 });
                     }}>
                         Back
-                    </PrimaryButton>
+                    </DefaultButton>
                 }
             </Stack.Item>
             <Stack.Item>
