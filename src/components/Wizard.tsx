@@ -13,7 +13,7 @@ export interface IContainerProps {
     onDismiss?: () => void;
     headerText?: string;
     closeButtonAriaLabel?: string;
-    Footer?: React.ReactElement;
+    Footer?: JSX.Element;
 }
 
 export enum ContainerType {
@@ -37,7 +37,7 @@ export interface IWizard {
     onDismiss?: () => void,
     headerText?: string,
     closeButtonAriaLabel?: string;
-    Footer?: React.ReactElement;
+    Footer?: JSX.Element;
 }
 
 export const WizardMainContent = (props: IWizard) => {

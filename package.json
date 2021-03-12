@@ -1,6 +1,6 @@
 {
   "name": "fluent-multistep-wizard",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": "An easy-to-use multi-step Wizard component using Fluent design. Work In Progress",
   "main": "dist/index.js",
   "scripts": {

@@ -11,7 +11,9 @@ export const Footer = () => {
             <Stack.Item>
                 {
                     (stepDetails.currentPageIndex !== 0) &&
-                    <PrimaryButton onClick={() => setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 })}>
+                    <PrimaryButton onClick={() => {
+                        setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 });
+                    }}>
                         Back
                     </PrimaryButton>
                 }
@@ -19,11 +21,13 @@ export const Footer = () => {
             <Stack.Item>
                 {
                     (stepDetails.currentPageIndex !== stepList.length - 1) &&
-                    <PrimaryButton onClick={() => setStepDetails({ currentPageIndex: stepDetails.currentPageIndex + 1 })}>
+                    <PrimaryButton onClick={() => {
+                        setStepDetails({ currentPageIndex: stepDetails.currentPageIndex + 1 });
+                    }}>
                         Next
                     </PrimaryButton>
                 }
             </Stack.Item>
         </Stack>
-    </footer>
+    </footer >
 }

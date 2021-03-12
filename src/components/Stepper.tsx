@@ -20,5 +20,4 @@ export const Stepper = (props: IStepper) => {
         stepStateColor: '#0078D4'
     }
     return <StepperNav steps={stepperMapProps} />
-
 }
