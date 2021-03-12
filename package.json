@@ -1,8 +1,8 @@
 {
   "name": "fluent-multistep-wizard",
-  "version": "1.0.0",
-  "description": "An easy-to-use multi-step Wizard component using Fluent design.",
-  "main": "index.js",
+  "version": "1.0.9",
+  "description": "An easy-to-use multi-step Wizard component using Fluent design. Work In Progress",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
@@ -20,12 +20,14 @@
   "homepage": "https://github.com/priyankark/fluent-multistep-wizard#readme",
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "@fluentui/react": "^8.1.8"
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "babel-core": "^6.26.3",
+    "@fluentui/react": "^8.1.8",
     "babel-runtime": "^6.26.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -36,5 +38,12 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "vertical-stepper-nav": "^1.0.1"
+  },
+  "alias": {
+    "react": "./node_modules/react",
+    "react-dom": "./node_modules/react-dom"
+  }
 }
