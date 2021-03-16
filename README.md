@@ -38,3 +38,10 @@ Explanation of the props to pass to the Wizard component:
 * headerText: Text describing the Wizard.
 * onDismiss : A function representing what should happen when user hits the cross icon.
 
+### Explaining NavContext
+
+The whole Wizard is wrapped with the NavContext which is just a Context defining functions for navigating around different screens from the footer (on press of next/back buttons) or the stepper buttons and also to get information on the current screen the user is in. Refer the interface INavContext to check on the functions available and you can choose to modify the default Footer component's code to have your own custom behavior for the footer (fore example a footer with additional buttons).
+
+### For Additional Support
+
+For more help, consider adding a new issue and we shall be glad to assist you. This component is still undergoing more development and we would be glad to hear on any feedback.
