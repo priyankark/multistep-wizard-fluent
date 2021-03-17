@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer tests basic snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    style="margin-left: 23vw;"
+  >
+    <div
+      class="ms-Stack css-40"
+    >
+      <div
+        class="ms-StackItem css-41"
+      />
+      <div
+        class="ms-StackItem css-41"
+      >
+        <button
+          class="ms-Button ms-Button--primary root-42"
+          data-is-focusable="true"
+          type="button"
+        >
+          <span
+            class="ms-Button-flexContainer flexContainer-43"
+            data-automationid="splitbuttonprimary"
+          >
+            <span
+              class="ms-Button-textContainer textContainer-44"
+            >
+              <span
+                class="ms-Button-label label-46"
+                id="id__0"
+              >
+                Next
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
