@@ -15,13 +15,13 @@ export const Stepper = (props: IStepper) => {
         }
     })
     stepperMapProps[stepDetails.currentPageIndex] = {
-        stepContent: () => <div style={{fontSize: 14, fontWeight: 'bold'}}>
+        stepContent: () => <div style={{ fontSize: 14, fontWeight: 'bold' }}>
             {props.steps[stepDetails.currentPageIndex].label}
         </div>,
-        onClickHandler: () => setStepDetails({ currentPageIndex: stepDetails.currentPageIndex}),
+        onClickHandler: () => setStepDetails({ currentPageIndex: stepDetails.currentPageIndex }),
         stepStateColor: '#0078D4'
     }
-    return <Stack styles={{root: {minWidth: getContainerStyleBasedOnResolution().navWidth}}}> 
-            <StepperNav steps={stepperMapProps} />
-           </Stack>
+    return <Stack styles={{ root: { minWidth: getContainerStyleBasedOnResolution().navWidth, maxWidth: getContainerStyleBasedOnResolution().navWidth } }}>
+        <StepperNav steps={stepperMapProps} />
+    </Stack>
 }

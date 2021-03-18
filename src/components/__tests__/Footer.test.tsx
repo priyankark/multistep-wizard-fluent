@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import '@testing-library/jest-dom';
 import {Footer} from '../Footer'; 
 import {render} from '@testing-library/react';

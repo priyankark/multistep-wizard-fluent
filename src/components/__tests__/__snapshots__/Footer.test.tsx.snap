@@ -3,7 +3,7 @@
 exports[`Footer tests basic snapshot 1`] = `
 <DocumentFragment>
   <footer
-    style="margin-left: 23vw;"
+    style="margin-left: 25vw;"
   >
     <div
       class="ms-Stack css-40"
