@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true
   },
   extends: [
     'plugin:react/recommended',
@@ -10,6 +11,8 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'standard',
     'plugin:prettier/recommended',
+    'plugin:testing-library/recommended',
+    'plugin:testing-library/react'
   ],
   parser: '@typescript-eslint/parser',
   globals: {
@@ -28,7 +31,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', '@typescript-eslint', 'react-hooks'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'jest'],
   rules: {
     'no-use-before-define': 'off',
     'react/display-name': 'off',
