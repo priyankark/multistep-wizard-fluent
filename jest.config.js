@@ -11,5 +11,6 @@ module.exports = {
       "@fluentui/react/lib/(.*)$": "@fluentui/react/lib-commonjs/$1"
     },
     // explicitly include any node libs using ESM modules
-    transformIgnorePatterns: ["node_modules/?!(@fluentui)"],
+    transformIgnorePatterns: ["node_modules/?!(@fluentui)","dist"],
+    testPathIgnorePatterns: ["node_modules","dist"],
   }
