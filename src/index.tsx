@@ -3,6 +3,7 @@ import {
   IStepper,
   Wizard,
   IWizard,
+  ContainerType,
 } from "./components/Wizard";
 import { DefaultPanel } from "./components/Containers/DefaultPanel";
 import { Footer } from "./components/Footer";
@@ -24,4 +25,5 @@ export {
   IContainerProps,
   IWizard,
   INavContext,
+  ContainerType,
 };
