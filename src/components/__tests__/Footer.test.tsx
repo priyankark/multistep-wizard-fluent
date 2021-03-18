@@ -5,7 +5,7 @@ import {render} from '@testing-library/react';
 
 describe('Footer tests', ()=>{
     test('basic snapshot', ()=>{
-        const {asFragment} = render(<Footer/>); 
+        const {asFragment} = render(<Footer shouldDisableNext={() => {return false}} shouldDisablePrev={(() => {return false})}></Footer>); 
         expect(asFragment()).toMatchSnapshot();
     })
 })

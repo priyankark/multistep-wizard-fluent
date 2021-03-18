@@ -4,16 +4,25 @@ import { Stack } from '@fluentui/react/lib/Stack';
 import { NavContext } from '../context/NavContext';
 import { getContainerStyleBasedOnResolution } from '../utilities/helpers';
 
-export const Footer = () => {
+export type IFooterProps = {
+    shouldDisablePrev?: () => boolean;
+    shouldDisableNext?: () => boolean;
+};
+
+export const Footer = (props: IFooterProps) => {
     const { stepDetails, setStepDetails, stepList } = React.useContext(NavContext);
     return <footer style={{ marginLeft: getContainerStyleBasedOnResolution().navWidth }}>
         <Stack horizontal tokens={{childrenGap: 12}}>
             <Stack.Item>
                 {
                     (stepDetails.currentPageIndex !== 0) &&
-                    <DefaultButton onClick={() => {
-                        setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 });
-                    }}>
+                    <DefaultButton 
+                        onClick={() => {
+                            setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 });
+                        }}
+                        disabled={
+                            props.shouldDisablePrev ? props.shouldDisablePrev() : false
+                        }>
                         Back
                     </DefaultButton>
                 }
@@ -21,9 +30,13 @@ export const Footer = () => {
             <Stack.Item>
                 {
                     (stepDetails.currentPageIndex !== stepList.length - 1) &&
-                    <PrimaryButton onClick={() => {
-                        setStepDetails({ currentPageIndex: stepDetails.currentPageIndex + 1 });
-                    }}>
+                    <PrimaryButton 
+                        onClick={() => {
+                            setStepDetails({ currentPageIndex: stepDetails.currentPageIndex + 1 });
+                        }}
+                        disabled={
+                            props.shouldDisableNext ? props.shouldDisableNext() : false
+                        }>
                         Next
                     </PrimaryButton>
                 }
