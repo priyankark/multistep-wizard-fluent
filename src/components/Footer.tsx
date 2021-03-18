@@ -5,8 +5,8 @@ import { NavContext } from '../context/NavContext';
 import { getContainerStyleBasedOnResolution } from '../utilities/helpers';
 
 export type IFooterProps = {
-    shouldDisablePrev: () => boolean;
-    shouldDisableNext: () => boolean;
+    shouldDisablePrev?: () => boolean;
+    shouldDisableNext?: () => boolean;
 };
 
 export const Footer = (props: IFooterProps) => {
@@ -21,7 +21,7 @@ export const Footer = (props: IFooterProps) => {
                             setStepDetails({ currentPageIndex: stepDetails.currentPageIndex - 1 });
                         }}
                         disabled={
-                            props.shouldDisablePrev()
+                            props.shouldDisablePrev ? props.shouldDisablePrev() : false
                         }>
                         Back
                     </DefaultButton>
@@ -35,7 +35,7 @@ export const Footer = (props: IFooterProps) => {
                             setStepDetails({ currentPageIndex: stepDetails.currentPageIndex + 1 });
                         }}
                         disabled={
-                            props.shouldDisableNext()
+                            props.shouldDisableNext ? props.shouldDisableNext() : false
                         }>
                         Next
                     </PrimaryButton>
