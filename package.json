@@ -69,8 +69,8 @@
     "dist"
   ],
   "dependencies": {
-    "vertical-stepper-nav": "^1.0.2",
-    "@fluentui/react": "^8.1.8"
+    "@fluentui/react": "^8.1.8",
+    "vertical-stepper-nav": "^1.0.2"
   },
   "alias": {
     "react": "./node_modules/react",
